@@ -10,3 +10,7 @@
 *.synctex.gz
 *.tex
 *.png
+*.nav
+*.run.xml
+*.snm
+*.toc
