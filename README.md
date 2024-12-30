@@ -1,4 +1,4 @@
-# BayesInfer
+# Bayesian Inference
 This repository has been created to compile all the codes developed as support for the 'Bayesian Inference' course, which is part of the Central Reserve Bank of Peru's summer course in economics. This repository will only be available until the end of the course.
 The repository is organized as follows: 
 1. The folder '01_LN' contains all the latest versions of the lecture notes.
