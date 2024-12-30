@@ -8,4 +8,5 @@
 *.log
 *.out
 *.synctex.gz
-*tex
+*.tex
+*.png
