@@ -7,7 +7,8 @@ The repository is organized as follows:
    * VARstuff.py:
    * KFstuff.py:
    * DSGEstuff.py:
-3. The notebooks listed below:
+3. The folder '03_Inputs' holds all necessary databases.
+4. The notebooks listed below:
    * 01_MCMC01_intro.ipynb: [optional] Example of numerical integration
    * 01_MCMC02_ImportanceSampling.ipynb: [optional] 
    * 01_MCMC03_GS_MH.ipynb: 
