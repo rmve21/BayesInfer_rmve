@@ -530,12 +530,21 @@ def get_sigmas(data, lag):
         sigmas[ii] = std(UU)
     return sigmas
 
-def Hyper_ML(theta, X, y, sigmas, deltas):
+def Hyper_ML(theta, X, y, sigmas, deltas, flag_sc, mus):
     T,k  = y.shape
     n,klagp1 = X.shape
     lag = (klagp1-1)//k
     lmbda = theta[0]
+    
     yd, Xd, Td = get_DumObsLitterman(lmbda, deltas, sigmas, lag)
+    
+    if flag_sc = True:
+        tau = theta[1]
+        yc, Xc, Tc = get_DumObsSumCoef(tau, deltas, mus, lag)
+        yd = vstack((yd, yc))
+        Xd = vstack((Xd, Xc))
+        Td = Td + Tc
+    
     Text = T + Td
     
     constants = -((k*T)/2)*log(pi) + suma( gammaln( (Text-n+1-(1+arange(k)))/2) ) - suma( gammaln( (Td-n+1-(1+arange(k)))/2) )
