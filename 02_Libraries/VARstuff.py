@@ -538,7 +538,7 @@ def Hyper_ML(theta, X, y, sigmas, deltas, flag_sc, mus):
     
     yd, Xd, Td = get_DumObsLitterman(lmbda, deltas, sigmas, lag)
     
-    if flag_sc = True:
+    if flag_sc == True:
         tau = theta[1]
         yc, Xc, Tc = get_DumObsSumCoef(tau, deltas, mus, lag)
         yd = vstack((yd, yc))
